@@ -84,6 +84,25 @@
     }
 
     }
+    <hr>
+    <h2>For loop in Angular</h2>
+    <div>
+        @for(item of users; track item ){
+            <h3>{{item}}</h3>
+
+        }
+
+    </div>
+    <hr>
+
+    <div>
+        @for(item of students;track item; let id=$index){
+            <h3>{{id+1}} Name of Student is:{{item.name}} and Email is :{{item.email}}</h3>
+            <!-- <h4> Student name is: {{name}}</h4> -->
+            <button (click)="getName(item.name)">Get name</button>
+        }
+    </div>
+
 
 </div>
 <hr>

@@ -41,5 +41,20 @@ export class ConditionsComponent {
   changeColorInput(event:Event){
     this.Colors=(event.target as HTMLInputElement).value;
   }
+  // forloop
+
+  users=["Ajay","Vishal","Nidhi","Ashish","Sagar"]
+  students=[
+    {name:"Riya" ,email:"riya@gmail.com" ,state:"UP" },
+    {name:"Ajay" ,email:"ajay@gmail.com" ,state:"MP" },
+    {name:"Shivansh",email:"shivansh@gmail.com" ,state: "HP" },
+    {name:"Ashish" ,email: "ashish@gmail.com",state:"WB" },
+    {name:"Shivam" ,email: "shivam@gmail.com",state:"TN" },
+  ]
+
+  getName(name:string){
+    console.log(name);
+
+  }
 
 }
