@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Events In Angular</h1>
+    <button class="btn"(click)="handleEvent($event)">Click Event</button>
+    <br> <br>
+    <div class="box1"(mouseenter)="handleEvent1($event)">Box1
+    </div><br>
+    <div class="box2"(mouseleave)="handleEvent2($event)">Box2
+    </div><br>
+    <div class="box3"(mouseover)="handleEvent3($event)">Box3
+    </div><br>
+    <div>
+        <input class="inputField" type="text"(input)="handleEvent4($event)"
+        (focus)="handleEvent4($event)"
+        (blur)="handleEvent4($event)"
+        placeholder="Enter text">
+    </div>
+</div>
+<hr>
+

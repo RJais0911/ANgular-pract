@@ -1,0 +1,20 @@
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: beige;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: brown;
+    border-radius:5px;
+    border: 1px solid black; 
+    color:aliceblue;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+h2{
+    color:black;
+}
