@@ -1,0 +1,89 @@
+<div class="container">
+    <h1>Conditional flow in Angular</h1>
+    <h2>Using if Control Flow</h2>
+
+    <button class="btn" (click)="hide()">Hide div</button>
+    <button class="btn" (click)="show()">Show div</button>
+    <button class="btn" (click)="toggle()">Toggle div</button>
+    <br><br>
+    @if(display){
+    <div class="green">
+    </div>
+    }
+    <hr>
+    <h2>Using if/else Control Flow</h2>
+    <div>
+        <button class="btn" (click)="toggleTwo()">{{togglediv? "show yellow div":"show red div"}}</button>
+        @if(togglediv){
+        <div class="red">
+        </div>
+        }
+        @else{
+        <div class="yellow">
+        </div>
+        }
+    </div>
+    <hr>
+    <h2>Using else if Control FLow</h2>
+    <button class="btn" (click)="handleButton(1)">Red</button>
+    <button class="btn" (click)="handleButton(2)">Blue</button>
+    <button class="btn" (click)="handleButton(3)">Green</button>
+    <button class="btn" (click)="handleButton(4)">Yellow</button>
+    <button class="btn" (click)="handleButton(7)">Other</button>
+    <input type="text" (input)="handleInput($event)" placeholder="Enter color number">
+    <br>
+    @if(color==1){
+    <div style="background-color:red; width:200px; height:200px;"></div>
+    }
+    @else if(color==2){
+    <div style="background-color :blue; width:200px; height:200px;"></div>
+
+    }
+    @else if(color==3){
+    <div style="background-color :green; width:200px; height:200px;"></div>
+
+    }
+    @else if(color==4){
+    <div style="background-color :yellow; width:200px; height:200px;"></div>
+
+    }
+    @else{
+    <div style="background-color:black; width:200px; height:200px;"></div>
+
+    }
+    <hr>
+
+    <h2>Using Switch case</h2>
+    <button class="btn" (click)="changeColor('red')">Red</button>
+    <button class="btn" (click)="changeColor('blue')">Blue</button>
+    <button class="btn" (click)="changeColor('green')">Green</button>
+    <button class="btn" (click)="changeColor('yellow')">Yellow</button>
+    <button class="btn" (click)="changeColor('grey')">Other</button>
+    <input type="text " (input)="changeColorInput($event)" placeholder="Enter color name">
+    @switch(Colors){
+    @case('red'){
+    <h1 style="background-color: red; color:black;">Red Color</h1>
+
+    }
+    @case('blue'){
+    <h1 style="background-color: blue; color:black;">Blue Color</h1>
+
+
+    }
+    @case('green'){
+    <h1 style="background-color: green; color:black;">Green Color</h1>
+
+    }
+    @case('yellow'){
+    <h1 style="background-color: yellow;color:black;">Yellow Color</h1>
+
+    }
+    @default{
+    <h1 style="background-color: grey;color:black;">Invalid color</h1>
+
+    }
+
+    }
+
+</div>
+<hr>

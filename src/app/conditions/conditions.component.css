@@ -1,0 +1,34 @@
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: beige;
+}
+h1{
+    color:brown;
+}
+
+    .btn{
+    padding: 10px 20px;
+    background-color: brown;
+    border-radius:5px;
+    border: 1px solid black; 
+    color:aliceblue;
+    margin:4px;
+}
+.green{
+    width:200px;
+    height:200px;
+    background-color: green;
+}
+.red{
+    width:200px;
+    height:200px;
+    background-color: red;
+
+}
+.yellow{
+    width:200px;
+    height:200px;
+    background-color: yellow;
+
+}

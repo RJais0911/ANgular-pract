@@ -4,9 +4,12 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import{ CounterComponent } from './counter/counter.component';
 import { EventsComponent } from './events/events.component';
+import { InputComponent } from './input/input.component';
+import { ConditionsComponent } from './conditions/conditions.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, SignupComponent, CounterComponent, EventsComponent],
+  imports: [RouterOutlet, LoginComponent, SignupComponent,
+     CounterComponent, EventsComponent, InputComponent , ConditionsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

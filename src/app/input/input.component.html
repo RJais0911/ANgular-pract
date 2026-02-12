@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Get And Set Input Fields</h1>
+    <div>
+        <h2>Username is: {{ display }}</h2>
+
+        <input 
+          type="text"  value="{{name}}"
+          (input)="getName($event)" 
+          placeholder="Enter username">
+        <br><br>
+        <button  class="btn"(click)="showName()">Get Value</button>
+        <button  class="btn" (click)="setName()">Set Value</button>
+        <hr>
+        <h2>Email is: {{email}}</h2>
+        <input type="text" value="{{email}}" placeholder="Enter email" #emailField>
+        <br> <br>
+        <button  class="btn"(click)="getEmail(emailField.value)">Get Email</button>
+        <button  class="btn"(click)="setEmail()" >Set Email</button>
+        
+    </div>
+</div>
+<hr>
