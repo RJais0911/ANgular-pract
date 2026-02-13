@@ -1,0 +1,109 @@
+<div class="container">
+    <h1>Directives in Angular</h1>
+    <div>
+        <h2 *ngIf="show">*ngIf Directives</h2>
+    </div>
+    <hr>
+
+    <div>
+        <h2> *ngFor Directives in Angular</h2>
+        <ul>
+            <li *ngFor="let x of students">
+                {{x}}
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <div>
+        <ul>
+            <li *ngFor="let stud of studentsData">
+                Student Name: {{stud.name}} Age: {{stud.age}}
+                <!-- Nested ngIf -->
+                <div *ngIf="stud.age >= 22; else notEligible">
+                    <p style="color:green">Eligible</p>
+                </div>
+                <ng-template #notEligible>
+                    <p style="color:red">Not Eligible</p>
+                </ng-template>
+            </li>
+        </ul>
+    </div>
+    <hr>
+        <h2> nested *ngIf directive in Angular</h2>
+    <div>
+        <div *ngIf="block ==0">
+            <h2 style="color:cadetblue">Heading 0</h2>
+        </div>
+        <div *ngIf="block ==1">
+            <h2 style="color:cadetblue">Heading 1</h2>
+        </div>
+        <div *ngIf="block ==2">
+            <h2 style="color:cadetblue">Heading 2</h2>
+        </div>
+        <div *ngIf="block ==3">
+            <h2 style="color:cadetblue">Heading 3</h2>
+        </div>
+        <button class="btn"(click)="updateBlock()">Update div</button>
+    </div>
+    <hr>
+
+    <!-- ngSwitch -->
+    <h2>*ngSwitch Directive in Angular</h2>
+<div class="btn">
+<button (click)="changeColor('red')">Red</button>
+<button (click)="changeColor('blue')">Blue</button>
+<button (click)="changeColor('green')">Green</button>
+<button (click)="changeColor('yellow')">Yellow</button>
+<button (click)="changeColor('pink')">Pink</button>
+<button (click)="changeColor('grey')">Grey</button>
+</div>
+
+<div [ngSwitch]="color">
+
+    <h2 *ngSwitchCase="'red'" style="background-color:red;">
+        Red Color
+    </h2>
+
+    <h2 *ngSwitchCase="'blue'" style="background-color:blue;">
+        Blue Color
+    </h2>
+
+    <h2 *ngSwitchCase="'green'" style="background-color:green;">
+        Green Color
+    </h2>
+
+    <h2 *ngSwitchCase="'yellow'" style="background-color:yellow;">
+        Yellow Color
+    </h2>
+
+    <h2 *ngSwitchCase="'pink'" style="background-color:pink;">
+        Pink Color
+    </h2>
+
+    <h2 *ngSwitchDefault="'grey'" style="background-color:grey">
+        Select a Color
+    </h2>
+
+</div>
+<hr>
+
+<!-- ngclass directive -->
+ <div>
+    <h2> ngClass Directive in Angular</h2>
+    <ul>
+  <li *ngFor="let student of studentsData"
+      [ngClass]="{'highlight': student.age > 25}">
+
+    {{student.name}} - {{student.age}}
+
+    <span *ngIf="student.age > 25">
+      (Eligible)
+    </span>
+  </li>
+</ul>
+ </div>
+ <hr>
+
+</div>
+<hr>

@@ -1,0 +1,21 @@
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: beige;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: brown;
+    border-radius:5px;
+    border: 1px solid black; 
+    color:aliceblue;
+}
+h1{
+    color: brown;
+}
+.highlight {
+  background-color: lightgreen;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
