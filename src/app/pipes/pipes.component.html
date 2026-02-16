@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Pipes in Angular</h1>
+    <h3>{{title}}</h3>
+    <h3>{{title | uppercase}}</h3>
+    <h3>{{title | titlecase}}</h3>
+    <h3>{{name | lowercase}}</h3>
+    <h3>{{name | titlecase}}</h3>
+    <h3>{{date}}</h3>
+    <h3>{{date | date}}</h3>
+    <h3>{{date | date:'fullDate'}}</h3>
+    <h3>{{date | date:'hh:mm:ss'}}</h3>
+    <h3>{{amount | currency:'EUR'}}</h3>
+    <h3>{{amount | currency:'INR'}}</h3>
+    <h3>{{amount | currency:'USD'}}</h3>
+    <h3>{{date | date:'fullDate' | uppercase}}</h3>
+    <hr>
+    <h2>Custom Pipe in angular</h2>
+    <h3>{{amount | currencyCustom}}</h3>
+    <h3>{{100 | currencyCustom}}</h3>
+    <h3>{{20 | currencyCustom:12}}</h3>
+    <h3>{{20 | currencyCustom:5}}</h3>
+    <hr>
+
+
+    <h2>Time Pipe with Parameters</h2>
+
+    <h3>Default: {{ currentTime | timecustom }}</h3>
+
+    <h3>12 Hour: {{ currentTime | timecustom :'12hr' }}</h3>
+
+    <h3>24 Hour: {{ currentTime | timecustom :'24hr' }}</h3>
+
+    <h3>Detailed: {{ currentTime | timecustom :'detailed' }}</h3>
+
+
+</div>

@@ -6,11 +6,12 @@ import{ CounterComponent } from './counter/counter.component';
 import { EventsComponent } from './events/events.component';
 import { InputComponent } from './input/input.component';
 import { ConditionsComponent } from './conditions/conditions.component';
-import {DirectivesComponent } from './directives/directives.component'
+import {DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, LoginComponent, SignupComponent,
-     CounterComponent, EventsComponent, InputComponent , ConditionsComponent, DirectivesComponent ],
+     CounterComponent, EventsComponent, InputComponent , ConditionsComponent, DirectivesComponent, PipesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
