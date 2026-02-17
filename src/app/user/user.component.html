@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Parent Component (User)</h1>
+
+  <button class="btn" (click)="toggleChildren()">
+    {{ showChildren ? 'Destroy Children' : 'Create Children' }}
+  </button>
+
+  <hr />
+
+  <div *ngIf="showChildren">
+    <app-user1 [count]="counter"></app-user1>
+    <app-user2 [message]="parentMessage"></app-user2>
+  </div>
+</div>
+<hr>

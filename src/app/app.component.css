@@ -15,3 +15,10 @@ p{
     color: #f8f9fa;
     text-align:center;
 }
+.btn{
+    padding: 10px 20px;
+    background-color: brown;
+    border-radius:5px;
+    border: 1px solid black; 
+    color:aliceblue;
+}

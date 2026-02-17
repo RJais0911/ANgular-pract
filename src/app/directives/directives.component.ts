@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { NgClass, NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-directives',
-  imports: [NgIf, NgFor , NgSwitch , NgSwitchCase, NgSwitchDefault , NgClass],
+  imports: [CommonModule,],
   templateUrl: './directives.component.html',
   styleUrl: './directives.component.css'
 })
