@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Dynamic Forms in Angular</h1>
+    <form [formGroup]="form">
+  <div formArrayName="skills">
+    <div *ngFor="let skill of skills.controls; let i = index">
+
+      <input  #input type="text" [formControlName]="i" placeholder="Enter skill" /> <br><br>
+
+      <button  class="btn "type="button" (click)="removeSkill(i)"> Remove</button> <br><br>
+    </div>
+  </div>
+  <button  class="btn" type="button" (click)="addSkill()">Add Skill</button>
+
+</form>
+
+</div>
+<hr>

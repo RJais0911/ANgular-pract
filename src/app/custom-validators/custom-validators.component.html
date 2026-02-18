@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>Custom Validator Example</h1>
+  <label for="username">Username</label>
+  <input
+    id="username"
+    type="text"
+    [formControl]="username"
+    placeholder="Enter username"
+  />
+
+  <div *ngIf="username.touched && username.errors?.['notAdmin']">
+    Username cannot be <strong>admin</strong>
+  </div>
+
+  <hr />
+
+  <h2>Password Match</h2>
+  <form [formGroup]="passwordForm">
+    <label for="password">Password: </label>
+    <input
+      id="password"
+      type="password"
+      formControlName="password"
+      placeholder="Enter password"
+    /> <br><br>
+
+    <label for="confirmPassword">Confirm Password: </label>
+    <input
+      id="confirmPassword"
+      type="password"
+      formControlName="confirmPassword"
+      placeholder="Confirm password"
+    />
+
+    <div *ngIf="passwordForm.touched && passwordForm.errors?.['passwordMismatch']">
+      Passwords do not match
+    </div>
+
+  </form>
+</div>
+<hr>

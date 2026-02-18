@@ -1,4 +1,32 @@
 <div class="container">
     <h1>Reactive forms in angular</h1>
-    
+
+    <h2>FormControl in  Reactiveforms</h2>
+    <form action="" method="post">
+        <input type="text" placeholder="Enter Name" [formControl]="name">
+        <br><br>
+        <input type="text" placeholder="Enter Password" [formControl]="password">
+        <br><br>
+
+        <button  type="button" class="btn" (click)="displayValue()">Login</button>
+    </form><hr>
+
+    <h2>FormGroup in  Reactiveforms</h2>
+    <form action="" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <input type="text" placeholder="Enter Name" formControlName="name" >
+        <br><br>
+        <input type="text" placeholder="Enter Password"  formControlName="password">
+        <br><br>
+        <input type="text" placeholder="Enter Email"  formControlName="email">
+        <br><br>
+        <button  class="btn">Submit</button>
+        <button  class="btn" type="button" (click)="setValue()">Set value</button>
+        </form>
+
+        <div>
+            <h3> Name: {{this.profileForm.value.name}}</h3>
+            <h3> Password:{{this.profileForm.value.password}}</h3>
+            <h3> Email: {{this.profileForm.value.email}}</h3>
+        </div>  
 </div>
+ <hr>

@@ -12,12 +12,16 @@ import { PipesComponent } from './pipes/pipes.component';
 import { UserComponent } from './user/user.component';
 import { FormsComponent } from './forms/forms.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ValidationComponent } from './validation/validation.component';
+import { CustomValidatorsComponent } from './custom-validators/custom-validators.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,CommonModule, LoginComponent, SignupComponent,
     CounterComponent, EventsComponent, InputComponent,
     ConditionsComponent, DirectivesComponent, PipesComponent,
-    UserComponent , FormsComponent, ReactiveFormsComponent],
+    UserComponent , FormsComponent, ReactiveFormsComponent,
+     ValidationComponent, CustomValidatorsComponent, DynamicFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
