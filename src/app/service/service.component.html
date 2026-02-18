@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Services in Angular</h1>
+
+    <div>
+        <button class="btn" (click)="getProductData()">Load product data</button>
+    </div>
+
+    <div>
+        @for (item of productData; track item) {
+            <h2 style="color: rgb(55, 55, 105)">{{ item.name }}, {{ item.brand }}, {{ item.price }}</h2>
+        }
+    </div>
+    <hr>
+</div>
+
+

@@ -15,13 +15,16 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
 import { ValidationComponent } from './validation/validation.component';
 import { CustomValidatorsComponent } from './custom-validators/custom-validators.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { ServiceComponent } from './service/service.component';
+import { ProductListComponent } from './product-list/product-list.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,CommonModule, LoginComponent, SignupComponent,
     CounterComponent, EventsComponent, InputComponent,
     ConditionsComponent, DirectivesComponent, PipesComponent,
     UserComponent , FormsComponent, ReactiveFormsComponent,
-     ValidationComponent, CustomValidatorsComponent, DynamicFormComponent],
+     ValidationComponent, CustomValidatorsComponent,
+      DynamicFormComponent , ServiceComponent , ProductListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
