@@ -17,6 +17,7 @@ import { CustomValidatorsComponent } from './custom-validators/custom-validators
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { ServiceComponent } from './service/service.component';
 import { ProductListComponent } from './product-list/product-list.component';
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,CommonModule, LoginComponent, SignupComponent,
@@ -24,7 +25,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     ConditionsComponent, DirectivesComponent, PipesComponent,
     UserComponent , FormsComponent, ReactiveFormsComponent,
      ValidationComponent, CustomValidatorsComponent,
-      DynamicFormComponent , ServiceComponent , ProductListComponent],
+      DynamicFormComponent , ServiceComponent , ProductListComponent,
+    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

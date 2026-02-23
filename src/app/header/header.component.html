@@ -1,0 +1,13 @@
+<div class="container">
+  <h1> Routing in Header </h1>
+  <header class="header">
+    <div class="logo"> Header
+    </div>
+
+    <nav class="nav-links">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >Home</a>  <!--If nested routing → recommended -->
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      <a routerLink="/cart" routerLinkActive="active">Cart</a>
+    </nav>
+  </header>
+  <hr>

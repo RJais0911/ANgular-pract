@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>HTTP Users</h1>
+
+<p *ngIf="loading">Loading users...</p>
+
+<p *ngIf="errorMsg" style="color:red">
+  {{ errorMsg }}
+</p>
+
+<ul *ngIf="!loading">
+  <li *ngFor="let user of users">
+    <strong>{{ user.name }}</strong> – <u>{{ user.email }}</u> <b>"{{user.role}}"</b>
+  </li>
+</ul><hr>
+</div>

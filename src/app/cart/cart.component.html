@@ -1,0 +1,8 @@
+<div class="container">
+    <h1> Cart Prodcuts</h1>
+
+    @for (item of productData; track item) {
+  <h2>{{ item.name }} - {{ item.brand }} - ₹{{ item.price }}</h2>
+    }
+</div>
+

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Ruchi Jaiswal",
+    "email": "ruchi@gmail.com",
+    "role": "Frontend Developer"
+  },
+  {
+    "id": 2,
+    "name": "Aman Verma",
+    "email": "aman@gmail.com",
+    "role": "Backend Developer"
+  },
+  {
+    "id": 3,
+    "name": "Niya Sharma",
+    "email": "niya@gmail.com",
+    "role": "Backend Developer"
+
+  },
+  {
+    "id": 4,
+    "name": "Raghav Deol",
+    "email": "raghav@gmail.com",
+    "role": "Frontend Developer"
+  }
+
+  
+
+]

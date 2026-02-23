@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Route Parameters</h1>
+
+  <ul>
+    <li><a routerLink="/user/1">User 1</a></li>
+    <li><a routerLink="/user/2">User 2</a></li>
+    <li><a routerLink="/user/3">User 3</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- Display User -->
+  <div *ngIf="selectedUser; else notFound">
+    <h2>User Details</h2>
+    <p>ID: {{ selectedUser.id }}</p>
+    <p>Name: {{ selectedUser.name }}</p>
+    <p>Age: {{ selectedUser.age }}</p>
+  </div>
+
+  <ng-template #notFound>
+    <h3>User Not Found !</h3>
+  </ng-template>
+
+</div>
+<hr>
